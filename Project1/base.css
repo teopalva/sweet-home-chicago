@@ -1,0 +1,475 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700|Exo+2:300,600);
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+body {
+    line-height: 1
+}
+ol,
+ul {
+    list-style: none
+}
+blockquote,
+q {
+    quotes: none
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+/* Solarized Palette - http://ethanschoonover.com/solarized ---------
+  lightgray      : #819090;
+  gray           : #708284;
+  mediumgray     : #536870;
+  darkgray       : #475B62;
+  darkblue       : #0A2933;
+  darkerblue     : #042029;
+  paleryellow    : #FCF4DC;
+  paleyellow     : #EAE3CB;
+  yellow         : #A57706;
+  orange         : #BD3613;
+  red            : #D11C24;
+  pink           : #C61C6F;
+  purple         : #595AB7;
+  blue           : #2176C7;
+  cyan           : #259286;
+  green          : #738A05; 
+*/
+
+body {
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    background: #FDF6E3;
+    color: #475B62;
+}
+strong {
+    font-weight: 600;
+}
+h1 {
+    font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #475B62;
+    font-size: 1.75em;
+    margin-bottom: .4em;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #CB4B19;
+    font-size: 1.75em;
+    margin-bottom: .4em;
+}
+p {
+    margin-bottom: .5em;
+}
+#container {
+    display: block;
+    width: 100vw;
+    height: 26.69595vw;
+    max-height: 100vh;
+    max-width: 374.58867vh;
+    /*width: 1639.2px;
+    height: 437.6px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E7E0CB;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*@media all and (max-width: 500px) {
+    h2 {
+        padding-left: 10px;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+    }
+}*/
+
+#graphic {
+    margin: 0 auto;
+}
+.main_title {
+    position: absolute;
+    left: 17%;
+    top: 8%;
+    z-index: 1;
+}
+#console {
+    display: block;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center
+}
+#map {
+    /*margin: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #E7E0CB;*/
+}
+#left {
+    display: inline-block;
+    /*margin: 0 auto;*/
+    width: 819.6px;
+    height: 437.6px;
+    position: relative;
+}
+#right {
+    display: inline-block;
+    /*margin: 0 auto;*/
+    width: 819.6px;
+    height: 437.6px;
+    /*background: #E7E0CB;*/
+    position: relative;
+}
+.detail {
+    display: inline-block;
+    margin: 0 auto;
+    width: calc(100% / 6);
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.slot_plot {
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100% * 0.6);
+    position: absolute;
+    bottom: 0;
+}
+.slot_map {
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100% * 0.2);
+    position: relative;
+}
+#tick text {
+    font-size: 15px;
+}
+.slot_title {
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100% * 0.2);
+    position: relative;
+}
+.section {
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100% * 0.8);
+    position: absolute;
+    bottom: 0;
+}
+.header {
+    margin: 0 auto;
+    width: 273.2px;
+    height: calc(437.6px * 0.2);
+    position: relative;
+    float: left;
+}
+#caLegend {
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    height: calc(100% * 0.54);
+    overflow: hidden;
+}
+#districtLegend {
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    height: calc(100% * 0.58);
+    bottom: 0;
+    float: left;
+}
+left:5%;
+ top:75%;
+ padding:0 0 2px;
+ border-bottom:1px solid #ddd;
+ position:absolute;
+
+}
+.dropdown {
+    position: absolute;
+    top: 70%;
+}
+#dropData {
+    position: absolute;
+    top: 73%;
+    left: 6%;
+}
+#dropChart {
+    position: absolute;
+    top: 73%;
+    left: 55%;
+}
+#map_plot {} #margin {
+    height: 20px;
+    margin: auto 0;
+}
+#div_tooltip {
+    width: calc(100% / 6);
+    height: calc(100% * (0.3));
+    position: absolute;
+    left: 31%;
+    top: 28%;
+    z-index: 1;
+}
+/*****   SVG STYLES  *****/
+
+.x_axis {
+    font-size: 15px;
+}
+.y_axis {
+    font-size: 15px;
+}
+.title {
+    font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 200;
+    fill: #475B62;
+    font-size: 3.5em;
+}
+.blu_text {
+    font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 100;
+    fill: #475B62;
+    font-size: 0.5em;
+}
+.dark_slot {
+    background: #DCD5C2;
+}
+.axisLabel {
+    font-size: 1.4em;
+}
+/*.x_axis {
+    font-size: 1em;
+}*/
+
+.bar {
+    fill: #A59E89;
+}
+.arc path {
+    stroke: #A59E89;
+    stroke-width: 0.1em;
+}
+/**************************/
+
+table.container th h1 {
+    font-weight: bold;
+    text-align: left;
+    color: #185875;
+}
+table.container td {
+    font-weight: normal;
+}
+table.container {
+    text-align: right;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+table.container td,
+table.container th {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+@media all and (min-width: 0px) and (max-width: 2000px) {
+    table.container th {
+        font-size: 13px;
+    }
+    table.container td {
+        font-size: 13px;
+    }
+}
+@media all and (min-width: 2001px) and (max-width: 20000px) {
+    table.container th {
+        font-size: 25px;
+    }
+    table.container td {
+        font-size: 25px;
+    }
+}
+/* Background-color of the odd rows */
+
+table.container tr:nth-child(odd) {
+    background-color: #DCD5C2;
+}
+/* Background-color of the even rows */
+
+table.container tr:nth-child(even) {
+    background-color: #FDF6E3;
+}
+table.container th {
+    padding: 9px;
+    background-color: #FDF6E3;
+}
+table.container td {
+    padding: 9px;
+    color: #475B62;
+}
+table.container td:nth-child(1) {
+    text-align: left;
+    padding-left: 30px;
+}
+table.container td:nth-child(2) {
+    text-align: right;
+    padding-right: 30px;
+}
+table.container th {
+    font-weight: 400;
+    text-align: center;
+}
+/******* ICONS *********/
+
+.icon {
+    fill: #475B62;
+    width: 0.1%;
+    height: 0.1%;
+}
+#icon_bars {
+    width: 1.2%;
+    height: 1.2%;
+}
+.title_box_text {
+    font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    fill: #475B62;
+    font-size: 2.5em;
+    opacity: 1;
+    cursor: default;
+}
+#title_box {
+    width: 100%;
+    height: 25%;
+}
+#slot0_title {
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100% * 0.15);
+    position: relative;
+}
+#slot0_map {
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100% * 0.25);
+    position: relative;
+}
